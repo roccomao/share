@@ -2,11 +2,12 @@
 1. 终端 Vim 改变光标在不同模式下的样式
 
    - **Reference**: [Change cursor shape in different modes](https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes)
+   - **Vim Help**: `:h termcap-cursor-shape`
 
    ```vim
-   let &t_SI = "\<Esc>[6 q"
-   let &t_SR = "\<Esc>[4 q"
-   let &t_EI = "\<Esc>[2 q"
+   let &t_SI = "\<Esc>[5 q"
+   let &t_SR = "\<Esc>[3 q"
+   let &t_EI = "\<Esc>[1 q"
 
    "  1 -> blinking block
    "  2 -> solid block
