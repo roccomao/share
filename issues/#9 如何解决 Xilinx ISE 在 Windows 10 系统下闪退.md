@@ -1,5 +1,5 @@
 
-如果你还因为某些原因而不得不使用 Xilinx ISE 软件，而他在 Windows 10 系统上将无法正常运行，这里有一份来自 10 年之前的[解决方案](https://www.eevblog.com/forum/fpga/guide-getting-xilinx-ise-to-work-with-windows-8-64-bit/msg479087/#msg479087)，为防止链接失效，引用如下：
+如果你还因为某些原因而不得不使用 Xilinx ISE 软件，而他在 Windows 10 系统上将无法正常运行（比如双击打开时无法启动或者闪退），这里有一份来自 10 年之前的[解决方案](https://www.eevblog.com/forum/fpga/guide-getting-xilinx-ise-to-work-with-windows-8-64-bit/msg479087/#msg479087)，为防止链接失效，引用如下：
 
 <details>
 <summary>Guide: Getting Xilinx ISE to work with Windows 8 / Windows 10 (64-bit)</summary>
@@ -51,8 +51,6 @@
 我们可以去[原始帖子](https://www.exxosforum.co.uk/forum/viewtopic.php?f=65&t=6052)查看详情，下载来自 [czietz](https://www.exxosforum.co.uk/forum/viewtopic.php?p=95891#p95891) 修改后的文件 [xilinx-ise-win10-hang-hotfix.zip](https://www.exxosforum.co.uk/forum/download/file.php?id=29188) 来替换原始文件，我编写了 bat 脚本来实现自动化替换，同时把上述的 Fixing PlanAhead 方案也添加了进来，使用方法如下：
 
 --------
-
-0. **注意**：若你打开过 ISE 并闪退，或者双击打开后没有看到任何反应，实际上 ISE 程序还在运行，请打开任务管理器，找到所有的 ise.exe 及 ISE 相关的程序，右键手动结束任务，以防止文件被进程占用而导致我们替换补丁文件时可能会失败
 
 1. 通过本仓库下载[所有需要的文件](https://github.com/roccomao/share/tree/master/code/Others/Xilinx)：包含 [patch.bat](../code/Others/Xilinx/patch.bat)，[revert.bat](../code/Others/Xilinx/revert.bat) 和一个目录 `patch/`，其中目录 `patch/` 下的文件全部来源于上述链接
 
