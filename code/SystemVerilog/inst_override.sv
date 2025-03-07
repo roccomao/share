@@ -59,5 +59,3 @@ module test;
     $display("type name of %s : %s", c3.get_full_name(), c3.get_type_name());
   end
 endmodule
-
-// -- issues #6 --
